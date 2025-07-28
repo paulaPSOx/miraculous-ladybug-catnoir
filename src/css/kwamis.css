@@ -1,0 +1,389 @@
+/* Reset e configurações gerais */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #ff004c #00208a;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Estilização da scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #173494;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#173494, #ff004c);
+  border-radius: 10px;
+  border: 2px solid #022596;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#ff004c, #173494);
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4)), url("../imagens/wallpaper/fundo-caixa-miraculous.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #000000, #173494, #000000);
+  color: #ffffff;
+  padding: 20px 30px;
+  box-shadow: 0 5px 15px rgba(23, 52, 148, 0.3);
+  border-bottom: 2px solid #ff004c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+/* Nav */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff004c;
+  text-shadow: 0 0 5px #ff004c, 0 0 10px #ff004c;
+}
+
+nav ul li a.ativado {
+  color: #ff004c;
+  border-bottom: 2px solid #ff004c;
+  padding-bottom: 2px;
+}
+
+/* Main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 127px);
+  padding: 0 20px;
+}
+
+/* Kwamis */
+.kwamis {
+  display: flex;
+  gap: 30px;
+  padding: 30px 0;
+}
+
+.cartao-kwami {
+  display: none;
+  max-width: 330px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 255, 0.466) 0px 10px 60px 0px;
+  border: 10px solid rgb(255, 255, 255); 
+  margin-top: 15px;
+}
+
+.cartao-kwami.aberto {
+  display: block;
+    
+}
+
+.cartao-kwami img {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.cartao-kwami .cartao-topo {
+  padding: 30px 40px 0;
+  z-index: 2;
+}
+
+.cartao-kwami .nome {
+  margin-bottom: 5px;
+}
+
+.cartao-kwami .tipo {
+  background-color: #ffffff;
+  font-size: 12px;
+  opacity: 0.7;
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+
+.cartao-kwami .detalhes {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartao-kwami .cartao-informacoes {
+  background-color: #dddef8dc;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 30px 40px;
+  margin-top: -50px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.cartao-kwami .cartao-informacoes h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #173494;
+}
+
+/* Tipos */
+.tipos {
+  position: relative;
+  background-image: url("../imagens/wallpaper/ladybug-catnoir.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.tipos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(9, 15, 104, 0.712);
+  backdrop-filter: blur(5px);
+  z-index: 0;
+}
+
+.tipos > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Listagem */
+.listagem ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listagem .kwami {
+  background: linear-gradient(145deg, #173494, #ffffff, #173494);
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 25px;
+  margin: 10px 0;
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: 2px solid #000000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.listagem .kwami:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 20px rgba(23, 52, 148, 0.5);
+}
+
+.listagem .kwami img {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.listagem .kwami span {
+  flex: 1;
+  font-weight: bold;
+  font-size: 16px;
+  color: inherit;
+}
+
+.listagem .kwami.ativo {
+  background: linear-gradient(145deg, #000000, #173494, #000000);
+  color: #fff;
+  border: 2px solid #f7f7f7;
+  box-shadow: 0 0 15px #173494;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #000000, #173494, #000000);
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 -5px 15px rgba(23, 52, 148, 0.3);
+  border-top: 2px solid rgba(211, 5, 33, 0.918);
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .github-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer .github-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #ff004c, 0 0 10px #ff004c;
+}
+
+/* Responsividade */
+@media (max-width: 1150px) {
+  .listagem ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .cartao-kwami {
+    max-width: 260px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 798px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 15px 20px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+  }
+
+  .listagem ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .cartao-kwami {
+    max-width: 230px;
+    margin-top: 50px;
+  }
+
+  .cartao-kwami .cartao-informacoes {
+    flex-direction: column;
+    gap: 18px;
+    padding: 35px 18px;
+  }
+
+  .cartao-kwami .cartao-informacoes h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 668px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .kwamis {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 0;
+  }
+
+  .cartao-kwami {
+    max-width: 250px;
+    border-width: 6px;
+    margin-top: 40px;
+  }
+
+  .cartao-kwami img {
+    max-height: 180px;
+    object-fit: contain;
+  }
+
+  .listagem ul {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  .listagem .kwami {
+    padding: 6px;
+    justify-content: center;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #173494, #ffffff, #173494);
+    color: transparent;
+  }
+
+  .listagem .kwami span {
+    display: none;
+  }
+
+  .listagem .kwami img {
+    width: 34px;
+    height: 34px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

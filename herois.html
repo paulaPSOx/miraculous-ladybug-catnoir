@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="src/imagens/logo/miraculous.png" type="image/x-icon" />
+
+  <title>Miraculous - Heróis</title>
+
+  <link rel="stylesheet" href="./src/css/herois.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>Miraculous - Heróis</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="kwamis.html">Kwamis</a></li>
+        <li><a href="herois.html" class="ativado">Heróis</a></li>
+        <li><a href="viloes.html">Vilões</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="selecao-de-personagens">
+    <section class="personagens">
+
+      <h1 class="titulo">Selecione um Herói</h1>
+
+      <ul class="lista-de-personagens">
+        <li class="personagem selecionado" id="ladybug" data-name="Ladybug"
+          data-description="Portadora do miraculous da joaninha, ela possui o poder da Criação, com seu Talismã, convoca um objeto que ela usa para alcançar o seu objetivo, sendo muitas vezes para parar um vilão.">
+          <img src="src/imagens/herois/ladybug_card.png" alt="Personagem Ladybug" />
+        </li>
+
+        <li class="personagem" id="chat-noir" data-name="Chat Noir"
+          data-description="Portador do miraculous do gato preto, ele possui o poder da Destruição, com seu Cataclismo, onde uma baixa gumaça preta cobre sua mão, é capaz de destruir qualquer coisa que tocar com a mão direita.">
+          <img src="src/imagens/herois/chat_noir_card.png" alt="Personagem Chat Noir" />
+        </li>
+
+        <li class="personagem" id="rena-rouge" data-name="Rena Rouge"
+          data-description=" Portadora do miraculous da raposa, ela possui o poder da Ilusão, com sua Miragem, ela é capaz de criar uma bola de energia gerando uma ilusão hiper-realista.">
+          <img src="src/imagens/herois/rena_rouge_card.png" alt="Personagem Rena Rouge" />
+        </li>
+
+        <li class="personagem" id="carapace" data-name="Carapace"
+          data-description="Portador do miraculous da tartaruga, ele possui o poder da Proteção, com seu Casco, é capaz de criar um campo de força / barreira esférico semelhante a um casco verde para proteger a si mesmo e seus aliados.">
+          <img src="src/imagens/herois/carapace_card.png" alt="Personagem Carapace" />
+        </li>
+
+        <li class="personagem" id="viperion" data-name="Viperion"
+          data-description="Portador do miraculous da serpente, ele possui o poder da Intuição, com sua Segunda Chance, é capaz de marca um momento no tempo e ficar repetindo ele entre os cinco minutos de reset desse tempo">
+          <img src="src/imagens/herois/viperion_card.png" alt="Personagem Viperion" />
+        </li>
+
+        <li class="personagem" id="ryuko" data-name="Ryuko"
+          data-description="Portadora do miraculous do dragão, ela possui o poder Perfeição, com seus superpoderes, Dragão do Vento, Dragão da Água e Dragão Relâmpago permitem que ela se transforme em ar, água e relâmpago, respectivamente.">
+          <img src="src/imagens/herois/ryuko_card.png" alt="Personagem Ryuko" />
+        </li>
+
+        <li class="personagem" id="vesperia" data-name="Vesperia"
+          data-description=" Portadora do miraculous da abelha, ela possui o poder Ação, com sua Ferroada, é capaz de imobilizar seus oponentes.">
+          <img src="src/imagens/herois/vesperia_card.png" alt="Personagem Vesperia" />
+        </li>
+
+        <li class="personagem" id="purple_tigress" data-name="Purple Tigress"
+          data-description="Portadora do miraculous do tigre, ela possui o poder da Potência, com sua Colisão, é capaz de para carregar seu punho com uma energia poderosa e dar um soco que subjuga completamente o que levou o soco">
+          <img src="src/imagens/herois/purple_tigress_card.png" alt="Personagem Purple Tigress" />
+        </li>
+
+        <li class="personagem" id="pigella" data-name="Pigella"
+          data-description=" Portadora do miraculous do porco, ela possui o poder do Júbilo, com seu  Presente, é capaz de conjurar uma caixa de presente mágica, que quando aberta, revela uma imagem do desejo mais profundo da pessoa atingida.">
+          <img src="src/imagens/herois/pigella_card.png" alt="Personagem Pigella" />
+        </li>
+
+        <li class="personagem" id="rooster_bold" data-name="Rooster Bold"
+          data-description="Portador do miraculous do galo, ele possui o poder da Pretensão, com sua Sublimação, é capaz de gerar ou aprimorar um superpoder.">
+          <img src="src/imagens/herois/rooster_bold_card.png" alt="Personagem Rooster Bold" />
+        </li>
+
+        <li class="personagem" id="caprikid" data-name="Caprikid"
+          data-description="Portador do miraculous do cabra, ele possui o poder Paixão, com sua Gênesis, é capaz de criar qualquer objeto que possa imaginar.">
+          <img src="src/imagens/herois/caprikid_card.png" alt="Personagem Caprikid" />
+        </li>
+
+        <li class="personagem" id="polymouse" data-name="Polymouse"
+          data-description=" Portadora do miraculous do rato, ela possui o poder da Multiplicação, com seu Multiplicar, é capaz de se multiplicar em múltiplas cópias menores de si mesma.">
+          <img src="src/imagens/herois/polymouse_card.png" alt="Personagem Polymouse" />
+        </li>
+
+        <li class="personagem" id="minotaurox" data-name="Minotaurox"
+          data-description=" Portador do miraculous do boi, ele possui o poder da Determinação, com sua Resistência, é capaz de se tornar impermeável aos ataques e poderes de outras pessoas.">
+          <img src="src/imagens/herois/minotaurox_card.png" alt="Personagem Minotaurox" />
+        </li>
+
+        <li class="personagem" id="pegasus" data-name="Pegasus"
+          data-description=" Portador do miraculous do cavalo, ele possui o poder do Teletransporte, com sua Viagem, é capaz de abrir um portal pelo qual possa viajar e sair em qualquer local que desejar.">
+          <img src="src/imagens/herois/pegasus_card.png" alt="Personagem Pegasus" />
+        </li>
+
+        <li class="personagem" id="king_monkey" data-name="King Monkey"
+          data-description="Portador do miraculous do macaco, ele possui o poder da Zombaria, com seu Alvoroço, é capaz de invocar um item que, ao entrar em contato com alguém, faz com que as habilidades dessa pessoa funcionem mal.">
+          <img src="src/imagens/herois/king_monkey_card.png" alt="Personagem King Monkey" />
+        </li>
+
+        <li class="personagem" id="miss_hound" data-name="Miss Hound"
+          data-description="Portadora do miraculous do cachorro, ela possui o poder da Adoração, com seu Pegar, é capaz de trazer qualquer objeto de qualquer lugar, que tenha encostado em sua arma.">
+          <img src="src/imagens/herois/miss_hound_card.png" alt="Personagem Miss Hound" />
+        </li>
+
+        <li class="personagem" id="bunnix" data-name="Bunnix"
+          data-description="Portadora do miraculous do coelho, ela possui o poder da Evolução, com sua Toca de Coelho, é capaz de criar portais que podem atravessar o tempo, indo desde o passado ao futuro.">
+          <img src="src/imagens/herois/bunnix_card.png" alt="Personagem Bunnix" />
+        </li>
+      </ul>
+    </section>
+
+    <section class="personagem-selecionado">
+      <img class="personagem-grande" src="src/imagens/herois/ladybug_fundo.png" alt="Personagem Selecionado" />
+      <div class="informacoes-personagem">
+        <h2 class="nome-personagem" id="nome-personagem">Ladybug</h2>
+        <p class="descricao-personagem" id="descricao-personagem">
+          Portadora do miraculous da joaninha, ela possui o poder da Criação,
+          com seu Talismã, convoca um objeto que ela usa para alcançar o seu objetivo, sendo muitas vezes para parar um
+          vilão.
+        </p>
+      </div>
+    </section>
+  </main>
+  <!-- Rodapé -->
+  <footer>
+    <p>
+      &copy; 2025 <a href="https://github.com/paulaPSOx" target="_blank" class="github-link">PaulaPSOx</a>. Todos os
+      direitos reservados.
+    </p>
+  </footer>
+  <script src="./src/js/herois.js"></script>
+</body>
+
+</html>

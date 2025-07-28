@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="src/imagens/logo/miraculous.png" type="image/x-icon" />
+
+  <title>Vilões - Miraculous</title>
+
+  <link rel="stylesheet" href="./src/css/viloes.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>Miraculous - Vilões</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="kwamis.html">Kwamis</a></li>
+        <li><a href="herois.html">Heróis</a></li>
+        <li><a href="viloes.html" class="ativado">Vilões</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="selecao-de-personagens">
+    <section class="personagens">
+      <h1 class="titulo">Vilões principais</h1>
+      <p class="descricao-personagem">
+        Conheça os vilões principais das primeiras temporadas da série, sendo eles:
+      </p>
+      <ul class="lista-de-personagens">
+        <li class="personagem selecionado" id="hawk_moth" data-name="Hawk Moth"
+          data-description="Principal vilão da série, usa as borboletas akumatizadas para transformar pessoas com emoções negativas em supervilões sob seu controle, com o objetivo de obter os Miraculous da Ladybug e do Chat Noir.">
+          <img src="src/imagens/personagens/hawk_moth_card.png" alt="Vilão Hawk Moth" />
+        </li>
+        <li class="personagem" id="mayura" data-name="Mayura"
+          data-description="Aliada de Hawk Moth, usa um Miraculous danificado do pavão para criar sentimonstros com uma pena mágica, controlando criaturas poderosas que seguem ordens.">
+          <img src="src/imagens/personagens/mayura_card.png" alt="Vilã Mayura" />
+        </li>
+      </ul>
+    </section>
+
+    <section class="personagem-selecionado">
+      <img class="personagem-grande" src="src/imagens/personagens/hawk_moth_fundo.png" alt="Vilão Selecionado" />
+      <div class="informacoes-personagem">
+        <h2 class="nome-personagem" id="nome-personagem">Hawk Moth</h2>
+        <p class="descricao-personagem" id="descricao-personagem">
+          Principal vilão da série, usa as borboletas akumatizadas para transformar pessoas com emoções negativas em
+          supervilões sob seu controle, com o objetivo de obter os Miraculous da Ladybug e do Chat Noir.
+        </p>
+      </div>
+    </section>
+  </main>
+  <!-- Rodapé -->
+  <footer>
+    <p>
+      &copy; 2025 <a href="https://github.com/paulaPSOx" target="_blank" class="github-link">PaulaPSOx</a>. Todos os
+      direitos reservados.
+    </p>
+  </footer>
+  <script src="src/js/viloes.js"></script>
+</body>
+
+</html>

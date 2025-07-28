@@ -1,0 +1,402 @@
+/* Reset e configurações gerais */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #ff004c #00208a;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Estilização da scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #173494;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#173494, #ff004c);
+  border-radius: 10px;
+  border: 2px solid #022596;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#ff004c, #173494);
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4)), url("../imagens/wallpaper/fundo-paris.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #000000, #173494, #000000);
+  color: #ffffff;
+  padding: 20px 30px;
+  box-shadow: 0 5px 15px rgba(23, 52, 148, 0.3);
+  border-bottom: 2px solid #ff004c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+/* Nav */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff004c;
+  text-shadow: 0 0 5px #ff004c, 0 0 10px #ff004c;
+}
+
+nav ul li a.ativado {
+  color: #ff004c;
+  border-bottom: 2px solid #ff004c;
+  padding-bottom: 2px;
+}
+
+/* Main */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+/* Seleção de Personagens */
+.selecao-de-personagens {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	min-height: calc(100vh - 400px);
+	justify-content: center;
+}
+
+.selecao-de-personagens .lista-de-personagens {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.selecao-de-personagens .personagens {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 900px;
+	gap: 20px;
+}
+
+.selecao-de-personagens .personagens .titulo {
+	font-size: 25px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 100%;
+	font-family: "Rubik Mono One";
+	text-align: center;
+	font-weight: 100;
+}
+
+/* Personagem selecionado*/
+.personagem-selecionado {
+	text-align: center;
+	max-height: 530px;
+}
+
+.personagem-selecionado .personagem-grande{
+    width: 80%;
+   height: 80%;
+}
+
+.personagem-selecionado .nome-personagem {
+	border-bottom: 2px solid #ff004c;
+	letter-spacing: 4px;
+	font-size: 40px;
+	padding: 10px;
+	font-family: "Lobster";
+	font-weight: 100;
+}
+
+.personagem-selecionado .descricao-personagem {
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	margin-top: 20px;
+	width: 450px;
+	font-family: "Rubik";
+}
+
+/* Lista de Personagens*/
+.lista-de-personagens .personagem {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 3px solid transparent;
+  background: radial-gradient(circle, #1c1c1c 0%, #000 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lista-de-personagens .personagem img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.lista-de-personagens .personagem.selecionado {
+  background: linear-gradient(145deg, #173494, #ffffff, #173494);
+  color: #000;
+  border: 3px solid #ffffff;
+  transform: scale(1.10);
+  box-shadow: 
+    0 0 15px #173494,
+    0 0 25px #173494,
+    0 0 40px rgba(23, 52, 148, 0.5),
+    inset 0 0 10px #173494;
+  animation: brilho-magico-azul 1.2s ease infinite alternate;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes brilho-magico-azul {
+  0% {
+    box-shadow:
+      0 0 10px #173494,
+      0 0 20px #173494,
+      0 0 30px rgba(23, 52, 148, 0.4),
+      inset 0 0 5px #173494;
+  }
+  100% {
+    box-shadow:
+      0 0 20px #173494,
+      0 0 35px #173494,
+      0 0 45px rgba(23, 52, 148, 0.7),
+      inset 0 0 10px #173494;
+  }
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #000000, #173494, #000000);
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 -5px 15px rgba(23, 52, 148, 0.3);
+  border-top: 2px solid rgba(211, 5, 33, 0.918);
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .github-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer .github-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #ff004c, 0 0 10px #ff004c;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .selecao-de-personagens {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .personagem-selecionado {
+    order: -1;
+    text-align: center;
+  }
+
+  .selecao-de-personagens .lista-de-personagens {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .personagem-selecionado .personagem-grande {
+    width: 80%;
+    max-width: 360px;
+    height: auto;
+  }
+
+  .personagem-selecionado .descricao-personagem {
+    width: 90%;
+    font-size: 15px;
+    margin: 16px auto 0;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 15px 20px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+  }
+
+  .selecao-de-personagens {
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .personagem-selecionado {
+    order: -1;
+    text-align: center;
+  }
+
+  .selecao-de-personagens .lista-de-personagens {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .personagem-selecionado .personagem-grande {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .personagem-selecionado .descricao-personagem {
+    width: 90%;
+    font-size: 14px;
+    margin: 16px auto 0;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 540px) {
+  .selecao-de-personagens {
+    gap: 20px;
+    padding: 20px 12px;
+  }
+
+  .personagem-selecionado {
+    order: -1;
+    text-align: center;
+  }
+
+  .selecao-de-personagens .lista-de-personagens {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .personagem-selecionado .personagem-grande {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .personagem-selecionado .descricao-personagem {
+    font-size: 13.5px;
+    width: 95%;
+    margin: 12px auto 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .personagem-selecionado .nome-personagem {
+    font-size: 24px;
+  }
+
+  .personagem-selecionado .descricao-personagem {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
