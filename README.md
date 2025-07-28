@@ -92,7 +92,7 @@ Criar uma interface interativa para que fãs da série **Miraculous** possam exp
 
 | Página         | Visualização                                                 |
 | -------------- | ------------------------------------------------------------ |
-| Página Inicial | ![Inicio](imagens-projeto/paulapsox-miraculous-ft\(1\).png) |
+| Página Inicial | ![Inicial](imagens-projeto/paulapsox-miraculous-ft\(1\).png) |
 | Heróis         | ![Heróis](imagens-projeto/paulapsox-miraculous-ft\(2\).png)  |
 | Kwamis         | ![Kwamis](imagens-projeto/paulapsox-miraculous-ft\(3\).png)  |
 | Vilões         | ![Vilões](imagens-projeto/paulapsox-miraculous-ft\(4\).png)  |
