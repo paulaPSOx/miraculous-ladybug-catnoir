@@ -1,4 +1,4 @@
-# Miraculous - Ladybug & Cat Noir 🐞✨🐱
+# Miraculous - Ladybug & Cat Noir 🐞💙🐱💚
 
 Este projeto é uma recriação interativa inspirada no universo **Miraculous: As Aventuras de Ladybug**, apresentando personagens icônicos como **Ladybug**, **Cat Noir**, **kwamis** e diversos **vilões**. Desenvolvido com **HTML**, **CSS** e **JavaScript**, o projeto oferece uma experiência visual envolvente, com animações e interações que trazem vida ao mundo de Miraculous.
 
